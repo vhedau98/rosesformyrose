@@ -9,17 +9,27 @@
 <body>
 
   <!-- PAGE 1 -->
-  <section class="page active" id="page1">
-    <div class="content">
-      <h1>Hey Adi… 👀</h1>
-      <p>I have something small but special for you</p>
-      <button onclick="nextPage(2)">Tap to continue</button>
-    </div>
+  <section id="page1" class="page show">
+    <h1>Hey Adi… 👀</h1>
+    <p>I have something small but special for you</p>
+    <button onclick="goToPage(2)">Tap to continue</button>
   </section>
 
   <!-- PAGE 2 -->
-  <section class="page" id="page2">
-    <div class="content">
-      <h1>Baccha 🤍</h1>
-      <p>You know you mean a lot to me, right?</p>
-      <button onc
+  <section id="page2" class="page">
+    <h1>Baccha 🤍</h1>
+    <p>You know you mean a lot to me, right?</p>
+    <button onclick="goToPage(3)">Just one more</button>
+  </section>
+
+  <!-- PAGE 3 -->
+  <section id="page3" class="page">
+    <h1>Pillu 🥺❤️</h1>
+    <p>This rose is just for you</p>
+    <img src="rose.png" class="rose" alt="Rose Bouquet">
+    <p class="from">— From Vinay 💖</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
