@@ -3,71 +3,64 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Full screen base */
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  display: flex;
+  overflow: hidden;
+}
+
+/* Each page = full screen */
+.page {
+  position: absolute;
+  inset: 0;
+  background: #ff8fa3;
+  display: none;
   align-items: center;
   justify-content: center;
 }
 
-/* Pages */
-.page {
-  display: none;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
-  animation: fadeIn 0.6s ease;
-}
-
+/* Visible page */
 .page.active {
-  display: block;
+  display: flex;
 }
 
+/* Center content */
+.content {
+  text-align: center;
+  color: #8b0000;
+}
+
+/* Headings */
 h1 {
-  color: #e63946;
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
 /* Buttons */
 button {
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 10px 22px;
   border-radius: 12px;
   border: none;
-  background: #ff6b81;
-  color: white;
+  background: white;
+  color: #e63946;
   font-size: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #e63946;
+  background: #ffe5ea;
 }
 
-/* Rose Image */
+/* Rose image */
 .rose {
-  width: 220px;
-  margin: 20px 0;
-  border-radius: 15px;
+  width: 260px;
+  margin-top: 20px;
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Footer text */
 .from {
+  margin-top: 10px;
   font-weight: bold;
-  color: #555;
 }
