@@ -1,5 +1,4 @@
-function showLove() {
-  const name = document.getElementById("nameSelect").value;
-  document.getElementById("message").innerText =
-    `This bouquet is just for you, ${name} 💐❤️`;
+function nextPage(pageNumber) {
+  document.querySelector(".page.active").classList.remove("active");
+  document.getElementById("page" + pageNumber).classList.add("active");
 }
