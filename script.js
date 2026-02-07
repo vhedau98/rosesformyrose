@@ -1,4 +1,7 @@
-function nextPage(pageNumber) {
-  document.querySelector(".page.active").classList.remove("active");
-  document.getElementById("page" + pageNumber).classList.add("active");
+function goToPage(pageNumber) {
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.remove("show");
+  });
+
+  document.getElementById("page" + pageNumber).classList.add("show");
 }
