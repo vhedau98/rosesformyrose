@@ -3,41 +3,39 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Full screen base */
 body {
   margin: 0;
   height: 100vh;
+  background: #ff8fa3;
   overflow: hidden;
 }
 
-/* Each page = full screen */
+/* ALL pages hidden by default */
 .page {
   position: absolute;
   inset: 0;
-  background: #ff8fa3;
   display: none;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
-/* Visible page */
-.page.active {
+/* ONLY active page shows */
+.page.show {
   display: flex;
 }
 
-/* Center content */
-.content {
-  text-align: center;
-  color: #8b0000;
-}
-
-/* Headings */
 h1 {
   font-size: 32px;
-  margin-bottom: 10px;
+  color: #b11226;
 }
 
-/* Buttons */
+p {
+  font-size: 18px;
+  color: #7a0c1b;
+}
+
 button {
   margin-top: 20px;
   padding: 10px 22px;
@@ -50,17 +48,15 @@ button {
 }
 
 button:hover {
-  background: #ffe5ea;
+  background: #ffe3e8;
 }
 
-/* Rose image */
 .rose {
   width: 260px;
   margin-top: 20px;
 }
 
-/* Footer text */
 .from {
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: bold;
 }
